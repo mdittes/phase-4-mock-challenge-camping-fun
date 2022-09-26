@@ -1,4 +1,9 @@
 puts "🏕 Seeding campers..."
+
+Camper.destroy_all
+Activity.destroy_all
+Signup.destroy_all
+
 camper1 = Camper.create(name: 'Caitlin', age: 8)
 camper2 = Camper.create(name: 'Lizzie', age: 9)
 camper3 = Camper.create(name: 'Tom', age: 12)
